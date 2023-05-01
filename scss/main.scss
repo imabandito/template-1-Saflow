@@ -1,0 +1,16 @@
+@import "../node_modules/scss-reset/src/scss/_reset.scss";
+
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+@import "./layout/grid";
+
+@import "./components/headers";
+@import "./components/trial";
+
+@import "./components/header";
+@import "./components/hero";
+@import "./components/features";
+@import "./components/work";
+@import "./components/pricing";
+@import "./components/footer";

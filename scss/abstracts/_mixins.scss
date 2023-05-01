@@ -1,0 +1,98 @@
+@mixin base-button($background) {
+  padding: 16px 24px;
+  border-radius: 8px;
+  display: flex;
+
+  color: #fff;
+  background: $background;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  transition: all 0.5s;
+
+  &:hover {
+    background: $block-blue;
+  }
+
+  .arrow {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+  }
+}
+
+@mixin underline {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+
+  width: 100%;
+  height: 1px;
+
+  background: #4e5a85;
+  opacity: 0.2;
+}
+
+@mixin font-extra-small {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+}
+
+@mixin font-normal-big {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+}
+
+@mixin font-super-big {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -0.04em;
+}
+
+@mixin font-small {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+}
+
+@mixin font-lite {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@mixin font-big {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -0.03em;
+}
+
+@mixin font-extra-big {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: -0.03em;
+}
+
+@mixin font-medium {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+}
+
+@mixin font-giant {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: -0.03em;
+}

@@ -1,0 +1,46 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 20px;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    margin: 36px 1px;
+  }
+
+  &__icon {
+    width: 27px;
+    height: 24px;
+
+    margin-right: 15px;
+  }
+
+  &__title {
+    color: #081131;
+
+    @include font-normal-big();
+  }
+
+  &__login {
+    margin: 24px 0px;
+
+    @include base-button(#98a6c7);
+  }
+}
+
+@media screen and(max-width:768px) {
+  .header {
+    &__logo {
+      margin: 10px 1px;
+    }
+
+    &__login {
+      margin: 10px 0px;
+    }
+  }
+}

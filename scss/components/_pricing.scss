@@ -1,0 +1,135 @@
+.pricing {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 172px auto 0px;
+
+  &__uptitle {
+    text-align: center;
+  }
+
+  &__title {
+    margin-top: 8px;
+  }
+
+  &__plans {
+    width: 100%;
+    margin-top: 176px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__plan {
+    display: flex;
+    flex-direction: column;
+
+    width: 400px;
+    //min-width: 340px;
+    padding: 48px;
+
+    background: #081131;
+    border-radius: 16px;
+    transition: all 0.5s;
+
+    &__type {
+      @include font-medium();
+      color: $light-blue;
+    }
+
+    &__price {
+      margin-top: 12px;
+      @include font-super-big();
+      color: #f4f7ff;
+    }
+
+    &__currency {
+      color: #4e5a85;
+    }
+
+    &:hover {
+      transform: translateY(-81px);
+    }
+  }
+
+  &__line {
+    height: 2px;
+    width: 100%;
+    margin: 48px 0px;
+
+    background: #4e5a85;
+    opacity: 0.16;
+    border-radius: 16px;
+  }
+
+  &__features {
+    margin-bottom: 48px;
+  }
+
+  &__feature {
+    padding-left: 36px;
+    margin-bottom: 24px;
+    flex-shrink: 1.5;
+
+    @include font-small();
+    color: #ccd2e9;
+
+    background-image: url("../../images/icons/check.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+
+  &__button {
+    @include base-button(#4e5a85);
+  }
+
+  &__trial {
+    flex-direction: row;
+    padding: 56px 52px;
+    margin-top: 172px;
+    min-height: 146px;
+    max-width: 82%;
+  }
+}
+
+@media screen and(max-width:1250px) {
+  .pricing {
+    margin-top: 40px;
+
+    &__plans {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    &__plan {
+      align-items: center;
+      flex-shrink: 2;
+      width: 100%;
+      max-width: 95%;
+      margin-top: 20px;
+      padding: 20px;
+
+      &:hover {
+        transform: translateY(0px);
+        background: #162044;
+      }
+    }
+
+    &__trial {
+      margin-top: 20px;
+      padding: 20px;
+      min-height: 0;
+      max-width: 95%;
+      flex-direction: column;
+      align-items: center;
+
+      &__subtitle {
+        text-align: center;
+      }
+    }
+  }
+}

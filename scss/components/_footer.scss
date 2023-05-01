@@ -1,0 +1,36 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background: $dark-blue;
+  padding: 48px 0px;
+  margin-top: 132px;
+
+  &__socials,
+  &__rules {
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__rights {
+    text-align: center;
+    color: #ccd2e9;
+  }
+
+  &__terms {
+    @include font-lite();
+    color: #ccd2e9;
+  }
+}
+
+@media screen and(max-width:768px) {
+  .footer {
+    padding: 20px;
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,9 @@
+.section-title {
+  color: $header-blue;
+  @include font-extra-big();
+}
+
+.section-uptitle {
+  color: $light-blue;
+  @include font-extra-small();
+}

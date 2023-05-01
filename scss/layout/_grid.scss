@@ -1,0 +1,19 @@
+body {
+  font-family: "Sora";
+  font-style: normal;
+  background: $main-bg-color;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+  &_underline::after {
+    @include underline();
+  }
+}
+
+a {
+  text-decoration: none;
+}

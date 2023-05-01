@@ -1,0 +1,89 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__header {
+    width: 100%;
+    margin: 65px 0px 72px;
+    padding: 20px;
+    max-width: 1060px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__info {
+    width: 400px;
+    @include font-giant();
+
+    color: $dark-blue;
+  }
+
+  &__pricing {
+    width: 400px;
+    padding: 20px;
+    margin-top: 27px;
+  }
+
+  &__subtitle {
+    @include font-extra-small();
+
+    color: $light-blue;
+  }
+
+  &__button {
+    margin-top: 32px;
+
+    @include base-button($block-blue);
+
+    &:hover {
+      background: $light-blue;
+    }
+  }
+
+  &__dashboard {
+    width: 100%;
+    height: auto;
+  }
+
+  &__sponsors {
+    padding: 94px 145px;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 40px;
+  }
+
+  &__sponsor__item {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.section_underline::after {
+  @include underline();
+  position: relative;
+}
+
+@media screen and (max-width: 840px) {
+  .hero__header {
+    justify-content: center;
+  }
+
+  .hero__sponsors {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hero {
+    &__title {
+      font-size: 40px;
+      line-height: 54px;
+    }
+  }
+}
